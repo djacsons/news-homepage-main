@@ -152,10 +152,10 @@ main{
     main{
         display: flex;
         flex-direction: column;
-        width: 24rem;
+        width: 20rem;
         height: auto;
         margin: 5%;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
     .menuLogo{
         display:block;
@@ -176,6 +176,9 @@ main{
     .row2a-child2{
         display: flex;
         flex-direction: column;
+    }
+    .row2a-child2a{
+        font-size: 60px;
     }
     .row2a-child2b{
         margin-top: 1rem;
@@ -213,7 +216,7 @@ main{
     .linkSection{
         display: none; 
         flex-direction: column;
-        z-index: 1;
+        z-index: 2;
         position: fixed;
         width: 70%;
         margin-left: 30%;
@@ -225,7 +228,7 @@ main{
     .hideBack{
         background-color: hsl(240, 100%, 5%);
         display: none;
-        width: 40%;
+        width: 45%;
         z-index: 1;
         height: 100rem;
         opacity: 40%;
