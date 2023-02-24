@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | News homepage</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+
+    <div class="row1-container">
+      <img src="assets/images/logo.svg" alt="page logo" width="75rem" height="45rem">
+      <div class = "space-div"></div>
+      <img src="assets/images/icon-menu.svg" alt="menu-logo" class="menuLogo">
+
+      <div class="hideBack"></div>
+      <div class="linkSection">
+        <img src="assets/images/icon-menu-close.svg" alt="menu-close" class="menuClose">
+        <a href="" class = "pageLinks">Home</a>
+        <a href="" class = "pageLinks">New</a>
+        <a href="" class = "pageLinks">Popular</a>
+        <a href="" class = "pageLinks">Trending</a>
+        <a href="" class = "pageLinks">Categories</a>
+      </div>
+      
+    </div>
+
+    
+    <div class="row2-container">
+
+      <div class="row2a-container">
+
+        <picture class="row2a-child1">
+          <source srcset="assets/images/image-web-3-mobile.jpg" media="(max-width:600px)">
+          <img class = "mainImage" src="assets/images/image-web-3-desktop.jpg" alt="web3 image" width="100%" height="100%" style="object-fit: fill;">
+        </picture>
+        
+
+        <div class="row2a-child2">
+          <h1 class = "row2a-child2a">
+            The Bright Future of Web 3.0?
+          </h1>
+          <div class="row2a-child2b">
+            <p style="margin:0; line-height: 1.3rem;">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?</p> 
+            <br>
+            <button class="readMoreBtn">READ MORE</button>
+          </div>
+        </div>
+
+      </div>
+      
+
+      <div class="row2b-container">
+        <h1>New</h1>
+        <div class="rightText">
+          <h2>Hydrogen VS Electric Cars</h2>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <hr class="whiteLine">
+        <div class="rightText">
+          <h2>The Downsides of AI Artistry</h2>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <hr class="whiteLine">
+        <div class="rightText">
+          <h2>Is VC Funding Drying Up?</h2>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+      </div>
+    </div>
+      
+
+    <div class="row3-container">
+
+      <div class="row3-items">
+        <img class = "bPics" src="assets/images/image-retro-pcs.jpg" alt="retro pcs">
+        <div class="bText">
+          <h1>01</h1>
+          <p>
+            <a href=""class="bTextHead"><strong >Reviving Retro PCs</strong> </a>
+            <br><br>
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+      <div class="row3-items">
+        <img class = "bPics" src="assets/images/image-top-laptops.jpg" alt="top laptops">
+        <div class="bText">
+          <h1>02</h1>
+          <p>
+           <a href=""class="bTextHead"><strong>Top 10 Laptops of 2022</strong></a>
+           <br><br>
+            Our best picks for various needs and budgets.</p>
+
+        </div>
+      </div>
+
+      <div class="row3-items">
+        <img class = "bPics" src="assets/images/image-gaming-growth.jpg" alt="gaming growth">
+        <div class="bText">
+          <h1>03</h1>
+          <p>
+           <a href=""class="bTextHead"><strong >The Growth of Gaming</strong></a>
+           <br><br> 
+            How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="main.js"></script>
+  </main>
+
+  <footer>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/djacsons">Djacson Stvil</a>.
+  </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,251 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    font-size: 15px;
+}
+main{
+    display: grid;
+    width: 80rem;
+    height: 57rem;
+    grid-template-rows: 5rem 35rem 12rem;
+    grid-gap: 1rem;
+    grid-row-gap: 2rem;
+    margin: 2%;
+    margin-left: 11rem;
+}
+.hideBack{
+    display: none;
+}
+.menuLogo{
+    display: none;
+}
+.menuClose{
+    display: none;
+}
+.space-div{
+    flex-grow: 1;
+    min-width: 40%;
+}
+.row1-container{
+    display: flex;
+    justify-content: space-between;
+}
+.pageLinks{
+    margin-left: 4rem;
+    align-self: center;
+    text-decoration: none;
+    color: hsl(240, 10%, 49%);
+    font-weight: 500;
+}
+.pageLinks:active{
+    color:hsl(5, 85%, 63%) ;
+}
+.row2-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2rem;
+}
+.row2a-container{
+    display: grid;
+    grid-template-rows: 1.3fr 1fr;
+    grid-row-gap: 2rem;
+}
+.row2a-child1{
+    object-fit: fill;
+    overflow: hidden;
+    max-height: 19rem;
+}
+.row2a-child2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+.row2a-child2a{
+    font-size: 70px;
+    line-height: 65px;
+    font-weight: 900;
+    margin: 0;
+}
+.row2a-child2b{
+    font-size: 16px;
+    line-height: 40px;
+    color: hsl(240, 10%, 49%);
+}
+.readMoreBtn{
+    width: 50%;
+    height: 25%;
+    font-size: 16px;
+    letter-spacing: .3rem;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.readMoreBtn:active{
+    background-color: hsl(240, 100%, 5%);
+}
+.row2b-container{
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+.row2b-container>h1{
+    color: hsl(35, 77%, 62%);
+    margin: 0;
+    margin-top: -1rem;
+    font-size: 50px;
+}
+.row2b-container>hr{
+    width: 100%;
+    opacity: 50%;
+}
+.rightText>p{
+    line-height: 2rem;
+    margin-bottom: 0;
+}
+.row3-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.row3-items{
+    width: 33%;
+    display: flex;
+}
+.bPics{
+    height: 100%;
+}
+.bText>h1{
+    color: hsl(233, 8%, 79%);
+    font-size: 36px;
+    margin: .5rem;
+    margin-left: 0;
+}
+.bTextHead{
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-weight: 700;
+}
+.bTextHead:active{
+    color: hsl(5, 85%, 63%);
+}
+.bText{
+    margin: 1rem;
+    margin-top:-1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bText>p{
+    color: hsl(240, 10%, 49%);
+    font-size: 16px;
+    margin-bottom: -1rem;
+}
+
+@media only screen and (max-width:600px){
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 24rem;
+        height: auto;
+        margin: 5%;
+        margin-left: 2rem;
+    }
+    .menuLogo{
+        display:block;
+        width: 4rem;
+        cursor: pointer;
+    }
+    .mainImage{
+        width: 100%;
+    }
+    .row2-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .row2a-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .row2a-child2{
+        display: flex;
+        flex-direction: column;
+    }
+    .row2a-child2b{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .row3-container{
+        display: flex;
+        flex-direction: column; 
+    }
+    .space-div{
+        flex-grow: 0;
+        min-width: 0%;
+    }
+   
+    .row3-items{
+        width: 100%;
+        height: 10rem;
+        margin-top: 1rem;
+    }
+    .bPics{
+        height: 100%;
+    }
+    .bText{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: .2rem;
+    }
+    .bText>h1{
+        margin: 0;
+    }
+    .bText>p{
+        margin: 0;
+    }
+    .linkSection{
+        display: none; 
+        flex-direction: column;
+        z-index: 1;
+        position: fixed;
+        width: 70%;
+        margin-left: 30%;
+        height: 100rem;
+        background-color: white;
+        font-size: 28px;
+        margin-top: -3rem;
+    }
+    .hideBack{
+        background-color: hsl(240, 100%, 5%);
+        display: none;
+        width: 40%;
+        z-index: 1;
+        height: 100rem;
+        opacity: 40%;
+        position: fixed;
+        margin-top: -3rem;
+        margin-left: -3rem;
+    }
+    .pageLinks{
+        margin: 0;
+        margin-bottom: 2rem;
+        align-self: flex-start;
+        margin-left: 2rem;
+    }
+    .menuClose{
+        display: block;
+        width: 3rem;
+        cursor: pointer;
+        margin-left: 59%;
+        margin-bottom: 6rem;
+        margin-top: 3rem;
+    }
+
+}
